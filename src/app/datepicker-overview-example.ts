@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class DatepickerOverviewExample {
   input: any = '';
-
+  output: any = '';
   update() {
     console.log('Input Givin: ', this.input);
     console.log('Output: ', new Date(this.input).getTime());
+    this.output = new Date(this.input).getTime();
   }
 }
 
